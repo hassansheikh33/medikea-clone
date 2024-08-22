@@ -26,12 +26,12 @@ export default function Difference() {
       <h2 className="text-center font-semibold text-[52px] mb-24">
         The Medikea Difference
       </h2>
-      <div className="flex justify-center gap-x-8">
+      <div className="flex flex-wrap justify-center gap-x-8  sm:gap-y-4">
         {cards.map((item) => {
           return (
             <div
               key={item.title}
-              className="w-[22%] h-60 bg-cardBg p-4 flex flex-col justify-end relative overflow-hidden"
+              className="w-[22%] h-60 bg-cardBg p-4 flex flex-col justify-end relative overflow-hidden sm:w-[90%]"
             >
               <div className="bg-navBtn absolute z-30 p-10 -top-10 -right-10 rotate-45"></div>
               <div className="h-[58%] flex flex-col justify-between">

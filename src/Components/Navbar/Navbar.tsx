@@ -94,7 +94,7 @@ export default function Navbar() {
             return (
               <p
                 key={item.content}
-                className="text-customBlack inline m-0 font-medium cursor-pointer"
+                className="inline m-0 font-medium cursor-pointer"
               >
                 {item.world && <img src={lang} className="inline mr-2" />}
                 {item.content}
