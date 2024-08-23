@@ -34,8 +34,12 @@ export default function Phone() {
             </p>
           </div>
           <div className="flex gap-x-6 justify-center mt-12">
-            <img src={appleStore} alt="apple store" />
-            <img src={playStore} alt="play store" />
+            <img
+              className="cursor-pointer"
+              src={appleStore}
+              alt="apple store"
+            />
+            <img className="cursor-pointer" src={playStore} alt="play store" />
           </div>
         </div>
       </div>

@@ -112,7 +112,7 @@ export default function Slider() {
       </div>
       <div className="mt-8 flex justify-center gap-x-4">
         <span
-          className={`rounded-full border ${state === "one" ? "border-navBtn" : "border-lightGreyDesc"} overflow-hidden p-[2px] flex justify-center items-center`}
+          className={`rounded-full border ${state === "one" ? "border-navBtn" : "border-lightGreyDesc"} overflow-hidden p-[2px] flex justify-center items-center cursor-pointer`}
           onClick={() => setState("one")}
         >
           <span
@@ -120,7 +120,7 @@ export default function Slider() {
           ></span>
         </span>
         <span
-          className={`rounded-full border ${state === "two" ? "border-navBtn" : "border-lightGreyDesc"} overflow-hidden p-[2px] flex justify-center items-center`}
+          className={`rounded-full border ${state === "two" ? "border-navBtn" : "border-lightGreyDesc"} overflow-hidden p-[2px] flex justify-center items-center cursor-pointer`}
           onClick={() => setState("two")}
         >
           <span
@@ -128,7 +128,7 @@ export default function Slider() {
           ></span>
         </span>
         <span
-          className={`rounded-full border ${state === "three" ? "border-navBtn" : "border-lightGreyDesc"} overflow-hidden p-[2px] flex justify-center items-center`}
+          className={`rounded-full border ${state === "three" ? "border-navBtn" : "border-lightGreyDesc"} overflow-hidden p-[2px] flex justify-center items-center cursor-pointer`}
           onClick={() => setState("three")}
         >
           <span

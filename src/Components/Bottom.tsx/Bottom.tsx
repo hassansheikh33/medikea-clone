@@ -8,9 +8,9 @@ export default function Bottom() {
       <div className="w-3/4 m-auto flex justify-between items-center h-full">
         <div className="flex items-center gap-x-8">
           <img className="w-6 h-6 inline" src={medikea} alt="medikea logo" />
-          <p>Terms and Conditions</p>
-          <p>Privacy Policy</p>
-          <p>Cookie Policy</p>
+          <p className="cursor-pointer">Terms and Conditions</p>
+          <p className="cursor-pointer">Privacy Policy</p>
+          <p className="cursor-pointer">Cookie Policy</p>
         </div>
         <div className="flex items-center m-0 text-black font-medium cursor-pointer">
           <img src={lang} className="inline mr-2" />

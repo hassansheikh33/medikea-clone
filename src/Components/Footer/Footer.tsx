@@ -33,7 +33,7 @@ export default function Footer() {
             <h2 className="font-medium text-xl mb-6">SERVICES</h2>
             <div className="flex flex-col gap-y-3">
               {services.map((item, index) => (
-                <p key={index} className="text-lightGreyDesc">
+                <p key={index} className="text-lightGreyDesc cursor-pointer">
                   {item}
                 </p>
               ))}
@@ -43,7 +43,7 @@ export default function Footer() {
             <h2 className="font-medium text-xl mb-6">COMPANY</h2>
             <div className="flex flex-col gap-y-3">
               {company.map((item, index) => (
-                <p key={index} className="text-lightGreyDesc">
+                <p key={index} className="text-lightGreyDesc cursor-pointer">
                   {item}
                 </p>
               ))}
@@ -53,7 +53,7 @@ export default function Footer() {
             <h2 className="font-medium text-xl mb-6">FOR BUSINESS</h2>
             <div className="flex flex-col gap-y-3">
               {business.map((item, index) => (
-                <p key={index} className="text-lightGreyDesc">
+                <p key={index} className="text-lightGreyDesc cursor-pointer">
                   {item}
                 </p>
               ))}
@@ -63,7 +63,7 @@ export default function Footer() {
             <h2 className="font-medium text-xl mb-6">GET SUPPORT</h2>
             <div className="flex flex-col gap-y-3">
               {support.map((item, index) => (
-                <p key={index} className="text-lightGreyDesc">
+                <p key={index} className="text-lightGreyDesc cursor-pointer">
                   {item}
                 </p>
               ))}

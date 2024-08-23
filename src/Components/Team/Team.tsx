@@ -52,7 +52,10 @@ export default function Team() {
         <br />
         <span className="text-navBtn">cares about you.</span>
       </h2>
-      <div className="flex gap-x-16 overflow-scroll scroll-none mt-20">
+      <div
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        className="flex gap-x-16 scroll-none mt-20 overflow-x-scroll"
+      >
         {doctors.map((doc, index) => (
           <div key={index} className="min-w-[20%]">
             <div className="rounded-full overflow-hidden bg-docCardBg">
