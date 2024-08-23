@@ -44,7 +44,7 @@ export default function Locations() {
       </h2>
       <div className="flex flex-wrap justify-evenly w-[95%] m-auto">
         {locations.map((item, index) => (
-          <div key={index} className="w-1/5 h-[450px] bg-cardBg">
+          <div key={index} className="w-1/5 min-h-[390px] bg-cardBg">
             <img className="w-full h-auto" src={map} alt="Location" />
             <div className="p-4">
               <h3 className="flex items-center text-2xl mb-2">
