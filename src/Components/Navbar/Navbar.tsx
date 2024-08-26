@@ -1,5 +1,7 @@
 import dropdown from "../../assets/dropdown.svg";
 import lang from "../../assets/lang.svg";
+import navMenu from "../../assets/navMenu.svg";
+
 const navItems = [
   {
     content: "Employers",
@@ -27,7 +29,7 @@ const navItems = [
 export default function Navbar() {
   return (
     <nav className="w-full bg-navBg items-center h-24 text-black p-2 flex justify-center">
-      <div className="flex justify-around items-center w-full">
+      <div className="flex justify-around items-center w-full customXl:justify-between ml-4 mr-4">
         <div className="inline-flex items-center gap-x-2">
           <svg
             className="w-8 h-8 inline"
@@ -89,7 +91,7 @@ export default function Navbar() {
             />
           </svg>
         </div>
-        <div className="inline-flex justify-evenly items-center gap-x-8">
+        <div className="inline-flex justify-evenly items-center gap-x-8 customXl:hidden">
           {navItems.map((item) => {
             return (
               <p
@@ -108,6 +110,11 @@ export default function Navbar() {
             Access Benefits
           </button>
         </div>
+        <img
+          className="hidden customXl:inline-block"
+          src={navMenu}
+          alt="navigation Menu Button"
+        />
       </div>
     </nav>
   );
