@@ -36,7 +36,7 @@ export default function Footer() {
     <>
       <footer className="w-3/4 m-auto mt-64 mb-48 customSm:mt-36 customSm:mb-20">
         <Links />
-        <div className="mt-28 text-greyDesc flex gap-x-40 customSm:flex-col customSm: gap-y-8">
+        <div className="mt-28 text-greyDesc flex justify-between gap-x-12 gap-y-8 flex-wrap customSm:flex-col">
           <div>
             <h2
               onClick={() => setServicesShown((prevState) => !prevState)}
@@ -49,7 +49,9 @@ export default function Footer() {
                 alt="dropdown arrow"
               />
             </h2>
-            <div className="flex flex-col gap-y-3 mt-8 customSm:mt-4">
+            <div
+              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${servicesShown ? "customSm:scale-100" : "customSm:scale-0"} ${servicesShown ? "customSm:h-[276px]" : "customSm:h-0"} customSm:transition-scale transition-height duration-500`}
+            >
               {services.map((item, index) => (
                 <p
                   key={index}
@@ -73,7 +75,9 @@ export default function Footer() {
                 alt="dropdown arrow"
               />
             </h2>
-            <div className="flex flex-col gap-y-3 mt-8 customSm:mt-4">
+            <div
+              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${companyShown ? "customSm:scale-100" : "customSm:scale-0"} ${companyShown ? "customSm:customSm:h-[168px]" : "customSm:customSm:h-0"} customSm:transition-all duration-500`}
+            >
               {company.map((item, index) => (
                 <p
                   key={index}
@@ -97,7 +101,9 @@ export default function Footer() {
                 alt="dropdown arrow"
               />
             </h2>
-            <div className="flex flex-col gap-y-3 mt-8 customSm:mt-4">
+            <div
+              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${businessShown ? "customSm:scale-100" : "customSm:scale-0"} ${businessShown ? "customSm:h-[132px]" : "customSm:h-0"} customSm:transition-scale duration-500`}
+            >
               {business.map((item, index) => (
                 <p
                   key={index}
@@ -121,7 +127,9 @@ export default function Footer() {
                 alt="dropdown arrow"
               />
             </h2>
-            <div className="flex flex-col gap-y-3 mt-8 customSm:mt-4">
+            <div
+              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${supportShown ? "customSm:scale-100" : "customSm:scale-0"} ${supportShown ? "customSm:h-[60px]" : "customSm:h-0"} customSm:transition-scale duration-500`}
+            >
               {support.map((item, index) => (
                 <p
                   key={index}

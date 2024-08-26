@@ -9,7 +9,7 @@ export default function Bottom() {
         <div className="flex items-center gap-x-8 customSm:gap-x-2 customSm:flex-col customSm: gap-y-1">
           <p className="cursor-pointer">
             <img
-              className="w-6 h-6 inline customSm:mr-2"
+              className="w-6 h-6 inline mr-2"
               src={medikea}
               alt="medikea logo"
             />
