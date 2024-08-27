@@ -60,7 +60,7 @@ export default function FAQ() {
           {faqs.map((item, index) => (
             <div className="w-[90%] customSm:mx-auto" key={index}>
               <div
-                className="flex justify-between cursor-pointer py-5 customSm:py-3 pb-0"
+                className="flex justify-between cursor-pointer py-5 customSm:py-3"
                 onClick={() => showFAQ(index)}
               >
                 <h3 className="text-2xl font-medium customSm:text-base">
@@ -70,7 +70,7 @@ export default function FAQ() {
                 {item.shown && <img src={upArrow} alt="dropdown" />}
               </div>
               <div
-                className={`p-4 ${item.shown ? "scale-100" : "scale-0"} ${item.shown ? "h-[112px]" : "h-0"} transition-all duration-500`}
+                className={`p-4 ${item.shown ? "scale-100" : "scale-0"} ${item.shown ? "h-[140px]" : "h-0"} transition-all duration-500`}
               >
                 <p className="text-lg customSm:text-sm">{item.ans}</p>
               </div>

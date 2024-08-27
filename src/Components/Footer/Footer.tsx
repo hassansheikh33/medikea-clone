@@ -50,7 +50,7 @@ export default function Footer() {
               />
             </h2>
             <div
-              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${servicesShown ? "customSm:scale-100" : "customSm:scale-0"} ${servicesShown ? "customSm:h-[276px]" : "customSm:h-0"} customSm:transition-scale transition-height duration-500`}
+              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${servicesShown ? "customSm:scale-100" : "customSm:scale-0"} ${servicesShown ? "customSm:h-[276px]" : "customSm:h-0"} customSm:transition-scale duration-500`}
             >
               {services.map((item, index) => (
                 <p
@@ -76,7 +76,7 @@ export default function Footer() {
               />
             </h2>
             <div
-              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${companyShown ? "customSm:scale-100" : "customSm:scale-0"} ${companyShown ? "customSm:customSm:h-[168px]" : "customSm:customSm:h-0"} customSm:transition-all duration-500`}
+              className={`flex flex-col gap-y-3 mt-8 customSm:mt-4 ${companyShown ? "customSm:scale-100" : "customSm:scale-0"} ${companyShown ? "customSm:h-[168px]" : "customSm:h-0"} customSm:transition-scale duration-500`}
             >
               {company.map((item, index) => (
                 <p
